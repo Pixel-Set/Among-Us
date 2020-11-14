@@ -3,6 +3,7 @@ package com.getpixelset.world;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+
 import javax.imageio.ImageIO;
 
 import com.getpixelset.main.Game;
@@ -25,7 +26,7 @@ public class World {
 				for (int yy = 0; yy < map.getHeight(); yy++) {
 					int pixelAtual = pixels[xx + (yy * map.getWidth())];
 					tiles[xx + (yy * WIDTH)] = new FloorTile(xx * 16, yy * 16, Tile.TILE_FLOOR);
-					// Chão
+					// Chï¿½o
 					if (pixelAtual == 0xFF000000) {
 						tiles[xx + (yy * WIDTH)] = new FloorTile(xx * 16, yy * 16, Tile.TILE_FLOOR);
 					} else if (pixelAtual == 0xFFA5A5A5) {
@@ -118,9 +119,9 @@ public class World {
 						// Armazem
 					} else if (pixelAtual == 0xFF4D38EA) {
 						tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.CAIXA_ARMAZEM);
-						// Ventilação
+						// Ventilacao
 					} else if (pixelAtual == 0xFFA08645) {
-						tiles[xx + (yy * WIDTH)] = new FloorTile(xx * 16, yy * 16, Tile.VENTILAÇAO);
+						tiles[xx + (yy * WIDTH)] = new FloorTile(xx * 16, yy * 16, Tile.VENTILACAO);
 						// ELETRICA
 					} else if (pixelAtual == 0xFFA56300) {
 						tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.ELETRICA);
@@ -131,7 +132,7 @@ public class World {
 						tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.CAMA);
 					} else if (pixelAtual == 0xFF87425B) {
 						tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.CAMA_ONE);
-						// Mesa Cartão
+						// Mesa Cartï¿½o
 					} else if (pixelAtual == 0xFFF600FF) {
 						tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.MESAC);
 					} else if (pixelAtual == 0xFFF600AE) {
