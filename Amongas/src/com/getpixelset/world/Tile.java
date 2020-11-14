@@ -29,7 +29,7 @@ public class Tile {
 	public static BufferedImage TILE_MESA_alert1 = Game.movieset.getSprite(48, 16, 16, 16);
 	public static BufferedImage TILE_MESA_alert2 = Game.movieset.getSprite(32, 32, 16, 16);
 	public static BufferedImage TILE_MESA_alert3 = Game.movieset.getSprite(48, 32, 16, 16);
-	public static BufferedImage VENTILAÇAO = Game.movieset.getSprite(224, 0, 16, 16);
+	public static BufferedImage VENTILACAO = Game.movieset.getSprite(224, 0, 16, 16);
 	public static BufferedImage CAIXA_ARMAZEM = Game.movieset.getSprite(240, 0, 16, 16);
 	public static BufferedImage ELETRICA = Game.movieset.getSprite(256, 0, 16, 16);
 	public static BufferedImage ELETRICA_ONE = Game.movieset.getSprite(272, 0, 16, 16);
